@@ -1,0 +1,234 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Washim\\Visual Studio Projects\\FruitShope\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8EDDE602-C7A7-4E48-9FDB-42CCBC3B4DED}|Fruit Seller\\Fruit Seller.csproj|d:\\washim\\visual studio projects\\fruitshope\\fruit seller\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8EDDE602-C7A7-4E48-9FDB-42CCBC3B4DED}|Fruit Seller\\Fruit Seller.csproj|solutionrelative:fruit seller\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EDDE602-C7A7-4E48-9FDB-42CCBC3B4DED}|Fruit Seller\\Fruit Seller.csproj|d:\\washim\\visual studio projects\\fruitshope\\fruit seller\\pages\\contact.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8EDDE602-C7A7-4E48-9FDB-42CCBC3B4DED}|Fruit Seller\\Fruit Seller.csproj|solutionrelative:fruit seller\\pages\\contact.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EDDE602-C7A7-4E48-9FDB-42CCBC3B4DED}|Fruit Seller\\Fruit Seller.csproj|d:\\washim\\visual studio projects\\fruitshope\\fruit seller\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8EDDE602-C7A7-4E48-9FDB-42CCBC3B4DED}|Fruit Seller\\Fruit Seller.csproj|solutionrelative:fruit seller\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EDDE602-C7A7-4E48-9FDB-42CCBC3B4DED}|Fruit Seller\\Fruit Seller.csproj|d:\\washim\\visual studio projects\\fruitshope\\fruit seller\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8EDDE602-C7A7-4E48-9FDB-42CCBC3B4DED}|Fruit Seller\\Fruit Seller.csproj|solutionrelative:fruit seller\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EDDE602-C7A7-4E48-9FDB-42CCBC3B4DED}|Fruit Seller\\Fruit Seller.csproj|d:\\washim\\visual studio projects\\fruitshope\\fruit seller\\pages\\cartdialog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8EDDE602-C7A7-4E48-9FDB-42CCBC3B4DED}|Fruit Seller\\Fruit Seller.csproj|solutionrelative:fruit seller\\pages\\cartdialog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EDDE602-C7A7-4E48-9FDB-42CCBC3B4DED}|Fruit Seller\\Fruit Seller.csproj|d:\\washim\\visual studio projects\\fruitshope\\fruit seller\\pages\\fruitlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8EDDE602-C7A7-4E48-9FDB-42CCBC3B4DED}|Fruit Seller\\Fruit Seller.csproj|solutionrelative:fruit seller\\pages\\fruitlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EDDE602-C7A7-4E48-9FDB-42CCBC3B4DED}|Fruit Seller\\Fruit Seller.csproj|d:\\washim\\visual studio projects\\fruitshope\\fruit seller\\pages\\payment.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8EDDE602-C7A7-4E48-9FDB-42CCBC3B4DED}|Fruit Seller\\Fruit Seller.csproj|solutionrelative:fruit seller\\pages\\payment.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EDDE602-C7A7-4E48-9FDB-42CCBC3B4DED}|Fruit Seller\\Fruit Seller.csproj|d:\\washim\\visual studio projects\\fruitshope\\fruit seller\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EDDE602-C7A7-4E48-9FDB-42CCBC3B4DED}|Fruit Seller\\Fruit Seller.csproj|solutionrelative:fruit seller\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EDDE602-C7A7-4E48-9FDB-42CCBC3B4DED}|Fruit Seller\\Fruit Seller.csproj|d:\\washim\\visual studio projects\\fruitshope\\fruit seller\\models\\fruit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EDDE602-C7A7-4E48-9FDB-42CCBC3B4DED}|Fruit Seller\\Fruit Seller.csproj|solutionrelative:fruit seller\\models\\fruit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EDDE602-C7A7-4E48-9FDB-42CCBC3B4DED}|Fruit Seller\\Fruit Seller.csproj|d:\\washim\\visual studio projects\\fruitshope\\fruit seller\\models\\fruititem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EDDE602-C7A7-4E48-9FDB-42CCBC3B4DED}|Fruit Seller\\Fruit Seller.csproj|solutionrelative:fruit seller\\models\\fruititem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EDDE602-C7A7-4E48-9FDB-42CCBC3B4DED}|Fruit Seller\\Fruit Seller.csproj|d:\\washim\\visual studio projects\\fruitshope\\fruit seller\\services\\fruitservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EDDE602-C7A7-4E48-9FDB-42CCBC3B4DED}|Fruit Seller\\Fruit Seller.csproj|solutionrelative:fruit seller\\services\\fruitservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EDDE602-C7A7-4E48-9FDB-42CCBC3B4DED}|Fruit Seller\\Fruit Seller.csproj|d:\\washim\\visual studio projects\\fruitshope\\fruit seller\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8EDDE602-C7A7-4E48-9FDB-42CCBC3B4DED}|Fruit Seller\\Fruit Seller.csproj|solutionrelative:fruit seller\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EDDE602-C7A7-4E48-9FDB-42CCBC3B4DED}|Fruit Seller\\Fruit Seller.csproj|d:\\washim\\visual studio projects\\fruitshope\\fruit seller\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8EDDE602-C7A7-4E48-9FDB-42CCBC3B4DED}|Fruit Seller\\Fruit Seller.csproj|solutionrelative:fruit seller\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Contact.razor",
+              "DocumentMoniker": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\Pages\\Contact.razor",
+              "RelativeDocumentMoniker": "Fruit Seller\\Pages\\Contact.razor",
+              "ToolTip": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\Pages\\Contact.razor",
+              "RelativeToolTip": "Fruit Seller\\Pages\\Contact.razor",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-16T08:16:50.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Fruit Seller\\Pages\\Home.razor",
+              "ToolTip": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\Pages\\Home.razor",
+              "RelativeToolTip": "Fruit Seller\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-16T08:15:33.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Fruit.cs",
+              "DocumentMoniker": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\Models\\Fruit.cs",
+              "RelativeDocumentMoniker": "Fruit Seller\\Models\\Fruit.cs",
+              "ToolTip": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\Models\\Fruit.cs",
+              "RelativeToolTip": "Fruit Seller\\Models\\Fruit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T06:46:48.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "Fruit Seller\\wwwroot\\index.html",
+              "ToolTip": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\wwwroot\\index.html",
+              "RelativeToolTip": "Fruit Seller\\wwwroot\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-01-16T06:11:53.153Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Payment.razor",
+              "DocumentMoniker": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\Pages\\Payment.razor",
+              "RelativeDocumentMoniker": "Fruit Seller\\Pages\\Payment.razor",
+              "ToolTip": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\Pages\\Payment.razor",
+              "RelativeToolTip": "Fruit Seller\\Pages\\Payment.razor",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAwBQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-16T06:07:42.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FruitList.razor",
+              "DocumentMoniker": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\Pages\\FruitList.razor",
+              "RelativeDocumentMoniker": "Fruit Seller\\Pages\\FruitList.razor",
+              "ToolTip": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\Pages\\FruitList.razor",
+              "RelativeToolTip": "Fruit Seller\\Pages\\FruitList.razor",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAtwEkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-15T11:57:54.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CartDialog.razor",
+              "DocumentMoniker": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\Pages\\CartDialog.razor",
+              "RelativeDocumentMoniker": "Fruit Seller\\Pages\\CartDialog.razor",
+              "ToolTip": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\Pages\\CartDialog.razor",
+              "RelativeToolTip": "Fruit Seller\\Pages\\CartDialog.razor",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAmwCgAAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-15T12:48:10.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Fruit Seller\\Layout\\MainLayout.razor",
+              "ToolTip": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "Fruit Seller\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-15T11:25:58.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FruitItem.cs",
+              "DocumentMoniker": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\Models\\FruitItem.cs",
+              "RelativeDocumentMoniker": "Fruit Seller\\Models\\FruitItem.cs",
+              "ToolTip": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\Models\\FruitItem.cs",
+              "RelativeToolTip": "Fruit Seller\\Models\\FruitItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T06:46:08.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FruitService.cs",
+              "DocumentMoniker": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\Services\\FruitService.cs",
+              "RelativeDocumentMoniker": "Fruit Seller\\Services\\FruitService.cs",
+              "ToolTip": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\Services\\FruitService.cs",
+              "RelativeToolTip": "Fruit Seller\\Services\\FruitService.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAmwAsAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T11:56:37.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CartService.cs",
+              "DocumentMoniker": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\Services\\CartService.cs",
+              "RelativeDocumentMoniker": "Fruit Seller\\Services\\CartService.cs",
+              "ToolTip": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\Services\\CartService.cs",
+              "RelativeToolTip": "Fruit Seller\\Services\\CartService.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAYwAoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T06:48:38.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Fruit Seller\\Layout\\NavMenu.razor",
+              "ToolTip": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "Fruit Seller\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAkwBUAAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-15T11:52:03.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "App.razor",
+              "DocumentMoniker": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\App.razor",
+              "RelativeDocumentMoniker": "Fruit Seller\\App.razor",
+              "ToolTip": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\App.razor",
+              "RelativeToolTip": "Fruit Seller\\App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAQwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-15T11:41:02.535Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

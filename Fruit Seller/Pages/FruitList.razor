@@ -1,0 +1,95 @@
+﻿@page "/fruits"
+@using Fruit_Seller.Models
+@using MudBlazor
+@using Fruit_Seller.Services
+
+@inject FruitService FruitService
+@inject CartService CartService
+
+<PageTitle>Fruit Seller</PageTitle>
+
+<MudContainer MaxWidth="MaxWidth.Large" Class="py-4">
+    <div class="row">
+        <div class="col-12 col-md-8">
+            <MudGrid Spacing="4">
+                @foreach (var fruit in filteredFruits)
+                {
+                    <MudItem xs="12" sm="6" md="4" lg="4" Class="mb-4">
+                        <MudCard Class="fruit-card h-100 w-100" Elevation="5" Style="height: 100%;">
+                            <MudCardMedia Image="@fruit.ImageUrl" Title="@fruit.FruitName" Class="border-bottom fruit-image w-100" Style="height: 180px; object-fit: cover;" />
+                            <MudCardContent>
+                                <MudStack Direction="Column" AlignItems="AlignItems.Center" Spacing="1">
+                                    <MudStack Row="true" Spacing="1" AlignItems="AlignItems.Center">
+                                        <MudTypography Variant="TypoVariant.h6" GutterBottom="true" Class="fruit-name">
+                                            <b>@fruit.FruitName</b>
+                                        </MudTypography>
+                                        <MudTypography Variant="TypoVariant.body2" GutterBottom="true" Class="fruit-unit">
+                                            (@fruit.Unit)
+                                        </MudTypography>
+                                    </MudStack>
+                                    <MudTypography Variant="TypoVariant.body1" Color="Color.Primary">
+                                       Price:  ৳ @fruit.Price
+                                    </MudTypography>
+                                </MudStack>
+                            </MudCardContent>
+                            <MudCardActions Class="mt-auto d-flex justify-content-end">
+                                <MudButton Variant="Variant.Filled" Color="Color.Tertiary" OnClick="@(() => AddToCart(fruit))">Add to Cart</MudButton>
+                            </MudCardActions>
+                        </MudCard>
+                    </MudItem>
+                }
+            </MudGrid>
+        </div>
+        <div class="col-12 col-md-4 col-lg-4">
+            <div class="mb-3">
+                <MudSelect T="string" Label="Filter" ValueChanged="FilterFruits" Variant="Variant.Outlined">
+                    <MudSelectItem Value="@("All")">All</MudSelectItem>
+                    <MudSelectItem Value="@("Apple")">Apple</MudSelectItem>
+                    <MudSelectItem Value="@("Banana")">Banana</MudSelectItem>
+                    <MudSelectItem Value="@("Orange")">Orange</MudSelectItem>
+                    <MudSelectItem Value="@("Mango")">Mango</MudSelectItem>
+                </MudSelect>
+            </div>
+            <CartDialog @ref="cartDialog" />
+        </div>
+    </div>
+</MudContainer>
+
+@code {
+    private List<Fruit> fruits;
+    private List<Fruit> filteredFruits;
+    private CartDialog cartDialog;
+    private bool cartDialogVisible = false;
+    private string selectedFilter = "All";
+
+    protected override void OnInitialized()
+    {
+        fruits = FruitService.GetFruits();
+        filteredFruits = fruits;
+    }
+
+    private void AddToCart(Fruit fruit)
+    {
+        // Add the selected fruit to the cart
+        CartService.AddToCart(fruit);
+
+        // Show the Cart dialog
+        cartDialogVisible = true;
+        cartDialog.Show();
+        StateHasChanged();
+    }
+
+    private void FilterFruits(string value)
+    {
+        selectedFilter = value;
+        if (selectedFilter == "All")
+        {
+            filteredFruits = fruits;
+        }
+        else
+        {
+            filteredFruits = fruits.Where(f => f.FruitName == selectedFilter).ToList();
+        }
+        StateHasChanged();
+    }
+}

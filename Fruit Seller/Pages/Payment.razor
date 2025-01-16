@@ -1,0 +1,114 @@
+﻿@page "/payment"
+@using MudBlazor
+@using Fruit_Seller.Models
+@using Fruit_Seller.Services
+@inject CartService CartService
+@inject NavigationManager Navigation
+@inject IJSRuntime JSRuntime
+@inject ISnackbar Snackbar
+
+<PageTitle>Payment</PageTitle>
+
+<MudContainer MaxWidth="MaxWidth.Large" Class="py-4">
+    <MudPaper Class="p-4">
+        <h3 class="mb-4">Transaction Details</h3>
+        <MudTable Items="cartItems" Elevation="1">
+            <HeaderContent>
+                <MudTh>Item</MudTh>
+                <MudTh>Quantity</MudTh>
+                <MudTh>Unit Price</MudTh>
+                <MudTh>Total</MudTh>
+                <MudTh>Remove Item</MudTh>
+            </HeaderContent>
+            <RowTemplate>
+                <MudTd>@context.FruitName @context.Unit</MudTd>
+                <MudTd>
+                    <div class="d-flex align-items-center">
+                        <MudIconButton @onclick="() => DecreaseQuantity(context)" Icon="@Icons.Material.Filled.Remove" Variant="Variant.Outlined" Color="Color.Primary" Size="Size.Small" />
+                        <span class="mx-2">@context.Quantity</span>
+                        <MudIconButton @onclick="() => IncreaseQuantity(context)" Icon="@Icons.Material.Filled.Add" Variant="Variant.Outlined" Color="Color.Primary" Size="Size.Small" />
+                    </div>
+                </MudTd>
+                <MudTd>৳ @context.Price</MudTd>
+                <MudTd>৳ @(context.Price * context.Quantity)</MudTd>
+                <MudTd>
+                    <MudIconButton @onclick="() => RemoveItem(context)" Icon="@Icons.Material.Filled.Delete" Variant="Variant.Outlined" Color="Color.Error" Size="Size.Small" />
+                </MudTd>
+            </RowTemplate>
+        </MudTable>
+        <div class="d-flex justify-content-between mt-4">
+            <h5>Purchase Date: @DateTime.Now.ToString("dd MMMM yyyy HH:mm:ss")</h5>
+            <h5>Total: ৳ @totalAmount</h5>
+        </div>
+        <div class="d-flex justify-content-between mt-3">
+            <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="GoBack">Go Back</MudButton>
+            <MudButton Variant="Variant.Filled" Color="Color.Success" OnClick="ProcessPayment">Pay</MudButton>
+        </div>
+    </MudPaper>
+</MudContainer>
+
+@code {
+    private List<CartItem> cartItems;
+    private double totalAmount = 0;
+
+    protected override void OnInitialized()
+    {
+        cartItems = CartService.GetCartItems() ?? new List<CartItem>();
+        CalculateTotalAmount();
+    }
+
+    private void GoBack()
+    {
+        Navigation.NavigateTo("/fruits");
+    }
+
+    private async Task ProcessPayment()
+    {
+        // Show a success message
+        Snackbar.Configuration.PositionClass = Defaults.Classes.Position.BottomRight;
+        Snackbar.Add("Payment succeeded. Thank you for buying from us!", Severity.Success);
+
+        // Clear the cart
+        CartService.ClearCart();
+        cartItems.Clear();
+
+        // Wait for a few seconds
+        await Task.Delay(3000);
+
+        // Redirect to the fruit list page
+        Navigation.NavigateTo("/fruits");
+    }
+
+    private void CalculateTotalAmount()
+    {
+        totalAmount = cartItems.Sum(item => item.Price * item.Quantity);
+    }
+
+    private void IncreaseQuantity(CartItem item)
+    {
+        item.Quantity++;
+        CalculateTotalAmount();
+        StateHasChanged();
+    }
+
+    private void DecreaseQuantity(CartItem item)
+    {
+        if (item.Quantity > 1)
+        {
+            item.Quantity--;
+            CalculateTotalAmount();
+            StateHasChanged();
+        }
+    }
+
+    private void RemoveItem(CartItem item)
+    {
+        cartItems.Remove(item);
+        CalculateTotalAmount();
+        StateHasChanged();
+    }
+}
+
+
+
+

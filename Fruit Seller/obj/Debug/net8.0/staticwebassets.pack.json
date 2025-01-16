@@ -1,0 +1,77 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Fruit Seller.styles.css",
+      "PackagePath": "staticwebassets\\Fruit Seller.styles.css"
+    },
+    {
+      "Id": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\wwwroot\\Images\\apple.jpg",
+      "PackagePath": "staticwebassets\\Images\\apple.jpg"
+    },
+    {
+      "Id": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\wwwroot\\Images\\banana.jpg",
+      "PackagePath": "staticwebassets\\Images\\banana.jpg"
+    },
+    {
+      "Id": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\wwwroot\\Images\\mango.jpg",
+      "PackagePath": "staticwebassets\\Images\\mango.jpg"
+    },
+    {
+      "Id": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\wwwroot\\Images\\orange.jpg",
+      "PackagePath": "staticwebassets\\Images\\orange.jpg"
+    },
+    {
+      "Id": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "D:\\Washim\\Visual Studio Projects\\FruitShope\\Fruit Seller\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Fruit Seller.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Fruit Seller.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Fruit Seller.props",
+      "PackagePath": "build\\Fruit Seller.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Fruit Seller.props",
+      "PackagePath": "buildMultiTargeting\\Fruit Seller.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Fruit Seller.props",
+      "PackagePath": "buildTransitive\\Fruit Seller.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

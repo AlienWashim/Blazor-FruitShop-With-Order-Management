@@ -1,0 +1,36 @@
+﻿@inherits LayoutComponentBase
+@using MudBlazor
+
+@* Required *@
+<MudThemeProvider />
+<MudPopoverProvider />
+
+@* Needed for dialogs *@
+<MudDialogProvider />
+
+@* Needed for snackbars *@
+<MudSnackbarProvider />
+
+<MudAppBar Color="Color.Tertiary" Fixed="false">
+    <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" />
+    <MudSpacer />
+
+    <MudButton Link="true" Href="/fruits" Color="Color.Inherit" Variant="Variant.Outlined">Buy Fruit</MudButton>
+    <MudButton Class="ml-1" Href="/contact" Color="Color.Inherit" Variant="Variant.Outlined">Contact</MudButton>
+
+    <MudSpacer />
+    
+    <MudIconButton Icon="@Icons.Material.Filled.Title" Color="Color.Inherit" />
+    <MudTypography Variant="h6" Align="center">FruitShop</MudTypography>
+
+</MudAppBar>
+
+<div class="page">
+    <main>
+
+        <article class="content px-4">
+            @Body
+        </article>
+
+    </main>
+</div>

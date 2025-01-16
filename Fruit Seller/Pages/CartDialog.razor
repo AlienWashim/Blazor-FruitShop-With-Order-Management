@@ -1,0 +1,120 @@
+﻿@using MudBlazor
+@using Fruit_Seller.Models
+@using Fruit_Seller.Services
+@inject NavigationManager Navigation
+@inject ISnackbar Snackbar
+@inject CartService CartService
+
+<div class="card" style="display: @(isVisible ? "block" : "none");">
+    <div class="card-header">
+        <h5>Your Cart</h5>
+    </div>
+    <div class="card-body" style="max-height: 320px; overflow-y: auto;">
+        @if (cartItems == null || cartItems.Count == 0)
+        {
+            <p>No items in the cart</p>
+        }
+        else
+        {
+            <ul class="list-group mb-3">
+                @foreach (var item in cartItems)
+                {
+                    <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                        <div class="d-flex align-items-center">
+                            <span>@item.FruitName</span>
+                            <div class="btn-group ml-3">
+                                <MudIconButton @onclick="() => DecreaseQuantity(item)" Icon="@Icons.Material.Filled.Remove" Variant="Variant.Outlined" Color="Color.Primary" Size="Size.Small" />
+                                <span class="mx-2 align-content-center">@item.Quantity</span>
+                                <MudIconButton @onclick="() => IncreaseQuantity(item)" Icon="@Icons.Material.Filled.Add" Variant="Variant.Outlined" Color="Color.Primary" Size="Size.Small" />
+                            </div>
+                        </div>
+                        <span> ৳ @(item.Price * item.Quantity)</span>
+                        <MudIconButton @onclick="() => RemoveItem(item)" Icon="@Icons.Material.Filled.Delete" Variant="Variant.Outlined" Color="Color.Error" Size="Size.Small" />
+                    </li>
+                }
+            </ul>
+        }
+    </div>
+    <div class="card-header">
+        <div class="d-flex justify-content-between">
+            <MudButton @onclick="ClearCart" Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Clear" Color="Color.Error">Clear Cart</MudButton>
+            <MudButton @onclick="NavigateToPayment" Variant="Variant.Filled" Color="Color.Success">Order Now</MudButton>
+        </div>
+        <h5 class="mt-3 text-right">Total: ৳ @totalAmount</h5>
+    </div>
+</div>
+
+@code {
+    private List<CartItem> cartItems;
+    private bool isVisible = true;
+    private double totalAmount = 0;
+
+    protected override void OnInitialized()
+    {
+        cartItems = CartService.GetCartItems() ?? new List<CartItem>();
+        CalculateTotalAmount();
+        StateHasChanged();
+    }
+
+    public void Show()
+    {
+        isVisible = true;
+        CalculateTotalAmount();
+        StateHasChanged();
+    }
+
+    private void ClearCart()
+    {
+        CartService.ClearCart();
+        cartItems.Clear();
+        CalculateTotalAmount();
+    }
+
+    private void IncreaseQuantity(CartItem item)
+    {
+        item.Quantity++;
+        CalculateTotalAmount();
+        StateHasChanged();
+    }
+
+    private void DecreaseQuantity(CartItem item)
+    {
+        if (item.Quantity > 1)
+        {
+            item.Quantity--;
+            CalculateTotalAmount();
+        }
+        StateHasChanged();
+    }
+
+    private void RemoveItem(CartItem item)
+    {
+        cartItems.Remove(item);
+        CalculateTotalAmount();
+        StateHasChanged();
+    }
+
+    private void CalculateTotalAmount()
+    {
+        totalAmount = cartItems.Sum(item => item.Price * item.Quantity);
+        StateHasChanged();
+    }
+
+    private void NavigateToPayment()
+    {
+        if (cartItems.Count != 0)
+        {
+            Navigation.NavigateTo("/payment");
+        }
+        else
+        {
+            // Show a warning message
+            Snackbar.Configuration.PositionClass = Defaults.Classes.Position.BottomRight;
+            Snackbar.Add("Oops! Looks like your cart is empty. Start shopping now!", Severity.Warning);
+        }
+    }
+}
+
+
+
+
